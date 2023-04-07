@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Highlighter",
+  "version": "1.0",
+  "description": "Highlights text on a webpage",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
